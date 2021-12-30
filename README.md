@@ -1,10 +1,10 @@
 # pwd-canvas-sketch
-This is a simple docker solution to experiment with canvas-sketch in PWD (Play With Docker) Lab without installing node.js and canvas-sketch locally.
+This is a simple docker solution to experiment with canvas-sketch in PWD (Play With Docker) Lab without installing node.js and canvas-sketch locally. Every session is kept alive for 4 hours, after that everything is deleted. If you want to save something copy/download before the end of the session. You can then upload in a new session by simply drag & drop in the PWD window.
 
 First, go to PWD Lab and start a new session:
 - https://labs.play-with-docker.com/
 
-Add a new instance and run the following commands on the command prompt (you can paste with the mouse middle button):
+Add a new instance and run the following commands on the command prompt (you can copy and then paste in the command line with the mouse middle button):
 - git clone https://github.com/isegkos/pwd-canvas-sketch.git
 - cd pwd-canvas-sketch
 - mkdir app
