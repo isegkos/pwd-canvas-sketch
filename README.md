@@ -5,13 +5,13 @@ First, go to PWD Lab select [Start] to start a new session:
 - https://labs.play-with-docker.com/
 
 Select [+ADD NEW INSTANCE] and run the following commands on the command prompt (you can copy and then paste in the command line with the mouse middle button):
-- git clone https://github.com/isegkos/pwd-canvas-sketch.git
-- cd pwd-canvas-sketch
-- mkdir app
-- docker-compose build
-- docker-compose run --rm -p 8888:9966 node sh
+1. git clone https://github.com/isegkos/pwd-canvas-sketch.git
+2. cd pwd-canvas-sketch
+3. mkdir app
+4. docker-compose build
+5. docker-compose run --rm -p 8888:9966 node sh
 
-You will get an environment where you can run canva-sketch commands, like:
+Command [4] will take a minute, so please wait (do not mind the warnings). You will get an environment where you can run canva-sketch commands, like:
 - canvas-sketch sketch.js --new (to create a new sketch)
 - canvas-sketch sketch.js (to open an existing sketch)
 
