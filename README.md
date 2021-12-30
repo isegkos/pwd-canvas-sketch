@@ -4,7 +4,7 @@ This is a simple docker solution to experiment with canvas-sketch in PWD (Play W
 First, go to PWD Lab and start a new session:
 - https://labs.play-with-docker.com/
 
-Add a new instance and run the following commands on the command prompt:
+Add a new instance and run the following commands on the command prompt (you can paste with the mouse middle button):
 - git clone https://github.com/isegkos/pwd-canvas-sketch.git
 - cd pwd-canvas-sketch
 - mkdir app
