@@ -29,4 +29,6 @@ To view your sketches in the browser:
 or 
 - click on the [8888] link if it becomes visible
 
+[Screen shot: PWD & Editor](...)
+[Screen shot: Sketch & Editor](...)
 
