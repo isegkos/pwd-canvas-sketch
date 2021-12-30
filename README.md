@@ -6,5 +6,8 @@ First, go to play with docker lab and start a new session:
 
 Add a new instance and run the following command on the command prompt:
 - git ...
+- mkdir src
+- docker-compose build
+- docker-compose run --rm -p 8888:9966 node sh
 
 
