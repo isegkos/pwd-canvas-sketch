@@ -26,7 +26,7 @@ Your sketches are located in the pwd-canvas-sketch/app directory. To edit your s
 To view your sketches in the browser:
 - click on [OPEN PORT]
 - enter 8888
-
-
+or 
+- click on the [8888] link if it becomes visible
 
 
