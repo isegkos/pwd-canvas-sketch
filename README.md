@@ -1,12 +1,13 @@
 # pwd-canvas-sketch
-This is a simple docker solution to experiment with canvas-sketch in PWD (Play With Docker) without installing node.js and canvas-sketch locally.
+This is a simple docker solution to experiment with canvas-sketch in PWD (Play With Docker) Lab without installing node.js and canvas-sketch locally.
 
-First, go to PWD lab and start a new session:
+First, go to PWD Lab and start a new session:
 - https://labs.play-with-docker.com/
 
 Add a new instance and run the following command on the command prompt:
 - git clone https://github.com/isegkos/pwd-canvas-sketch.git
-- mkdir src
+- cd pwd-canvas-sketch
+- mkdir app
 - docker-compose build
 - docker-compose run --rm -p 8888:9966 node sh
 
@@ -19,7 +20,7 @@ Whenever you want to stop working on a sketch and start/open another sketch, pre
 If you type exit and press ENTER you will leave the environment. If you want to start the environment again in the same PWD instance/session, run the following command again:
 - docker-compose run --rm -p 8888:9966 node sh
 
-Your sketches are located in the src directory. To edit your sketches in the online editor:
+Your sketches are located in the pwd-canvas-sketch/app directory. To edit your sketches in the online editor:
 - click on [EDITOR]
 
 To view your sketches in the browser:
