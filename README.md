@@ -16,7 +16,7 @@ You will get an environment where you can run canva-sketch commands, like:
 
 Whenever you want to stop working on a sketch and start/open another sketch, press CTRL+C and give the next canvas-sketch command. 
 
-If you type exit and press ENTER you will leave the environment. If you want to start the environment again run the following command again:
+If you type exit and press ENTER you will leave the environment. If you want to start the environment again in the same PWD instance/session, run the following command again:
 - docker-compose run --rm -p 8888:9966 node sh
 
 Your sketches are located in the src directory. To edit your sketches in the online editor:
