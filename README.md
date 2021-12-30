@@ -1,7 +1,7 @@
 # pwd-canvas-sketch
 This is a simple docker solution to experiment with canvas-sketch in PWD (Play With Docker) without installing node.js and canvas-sketch locally.
 
-First, go to play with docker lab and start a new session:
+First, go to PWD lab and start a new session:
 - https://labs.play-with-docker.com/
 
 Add a new instance and run the following command on the command prompt:
@@ -13,6 +13,8 @@ Add a new instance and run the following command on the command prompt:
 You will get an environment where you can run canva-sketch commands, like:
 - canvas-sketch sketch.js --new (to create a new sketch)
 - canvas-sketch sketch.js (to open an existing sketch)
+
+Whenever you want to stop working on a sketch and start/open another sketch, press CTRL+C and give the next canvas-sketch command. 
 
 If you type exit and press ENTER you will leave the environment. If you want to start the environment again run the following command again:
 - docker-compose run --rm -p 8888:9966 node sh
