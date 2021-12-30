@@ -12,7 +12,8 @@ Select [+ADD NEW INSTANCE] and run the following commands on the command prompt 
 5. docker-compose run --rm -p 8888:9966 node sh
 
 Command [4] will take a minute, so please wait (do not mind the warnings). After command [5], you will get an environment where you can run canva-sketch commands, like:
-- canvas-sketch sketch.js --new (to create a new sketch)
+- to create a new sketch:
+- - canvas-sketch sketch.js --new 
 - canvas-sketch sketch.js (to open an existing sketch)
 
 Whenever you want to stop working on a sketch and start/open another sketch, press CTRL+C and give the next canvas-sketch command. 
