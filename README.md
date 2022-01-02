@@ -1,7 +1,7 @@
 # pwd-canvas-sketch
 This is a simple docker solution to experiment with canvas-sketch online in PWD (Play With Docker) Lab without installing node.js and canvas-sketch locally. Every session is kept alive for 4 hours, after that everything is deleted. If you want to save something copy/download before the end of the session. You can then upload in a new session by simply drag & drop in the PWD window.
 
-First, go to PWD Lab select [Start] to start a new session:
+First, go to PWD Lab select [Login] > (docker) and [Start] to start a new session:
 - https://labs.play-with-docker.com/
 
 Select [+ADD NEW INSTANCE] and run the following commands on the command prompt (you can copy and then paste in the command line with the mouse middle button):
@@ -17,7 +17,7 @@ Command [4] will take a minute, so please wait (do not mind the warnings). After
 - to open an existing sketch:
   - canvas-sketch sketch.js 
 
-Whenever you want to stop working on a sketch and start/open another sketch, press CTRL+C and give the next canvas-sketch command. 
+You can use the canvas-sketch-util library and the --output option in the commands. The ffmpeg is also installed in the environment. Whenever you want to stop working on a sketch and start/open another sketch, press CTRL+C and give the next canvas-sketch command. 
 
 If you type exit and press ENTER you will leave the environment. If you want to start the environment again in the same PWD instance/session, run the following command again:
 - docker-compose run --rm -p 8888:9966 node sh
@@ -31,6 +31,8 @@ To view your sketches in the browser:
 
 or 
 - click on the [8888] link if it becomes visible
+
+You cannot use the --out option which opens the sketch in the browser automatically, you have to open the sketch on your own, on the [8888] port.
 
 ![Screen shot: PWD & Editor](Screenshot1.png)
 ![Screen shot: Sketch & Editor](Screenshot2.png)
