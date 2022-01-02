@@ -34,7 +34,7 @@ or
 
 ### Notes:
 - You cannot use the --out option which opens the sketch in the browser automatically, you have to open the sketch on your own, on the [8888] port.
-- When you create a new sketch with 'canvas-sketch sketch.js --new' and then add a library, like 'canvas-sketch-util/random', an erro will appear saying the module cannot be found. That is because when the sketch was created the library was not included in the node modules. Simply press CTRL+C and reopen as an existing sketch with 'canvas-sketch sketch.js' (without the --new option) and the library will be included. Reload the page with the sketch.
+- When you create a new sketch with 'canvas-sketch sketch.js --new' and then add a library, like 'canvas-sketch-util/random', an error will appear saying the module cannot be found. That is because when the sketch was created, the library was not included in the node modules. Simply press CTRL+C and reopen as an existing sketch with 'canvas-sketch sketch.js' (without the --new option) and the library will be included. Reload or reopen the page with the sketch.
 
 ### Screen shots:
 ![Screen shot: PWD & Editor](Screenshot1.png)
