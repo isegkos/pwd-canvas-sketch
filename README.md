@@ -1,5 +1,5 @@
 # pwd-canvas-sketch
-This is a simple docker solution to experiment with canvas-sketch online in PWD (Play With Docker) Lab without installing node.js and canvas-sketch locally. Every session is kept alive for 4 hours, after that everything is deleted. If you want to save something copy/download before the end of the session. You can then upload in a new session by simply drag & drop in the PWD window.
+This is a simple docker solution to experiment with canvas-sketch online in PWD (Play With Docker) Lab without installing node.js and canvas-sketch locally. Every session is kept alive for 4 hours, after that everything is deleted. If you want to save something copy/download before the end of the session. You can then upload a file in a new session by simply drag & drop in the PWD window or by creating a new file and copying/pasting the contents.
 
 First, go to PWD Lab select [Login] > (docker) and [Start] to start a new session:
 - https://labs.play-with-docker.com/
