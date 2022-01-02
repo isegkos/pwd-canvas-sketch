@@ -36,6 +36,6 @@ or
 - When you create a new sketch with 'canvas-sketch sketch.js --new' and then add a library, like 'canvas-sketch-util/random', an error will appear saying the module cannot be found. That is because when the sketch was created, the library was not included in the node modules. Simply press CTRL+C and reopen as an existing sketch with 'canvas-sketch sketch.js' (without the --new option) and the library will be included. Reload or reopen the page with the sketch.
 
 ### Screen shots:
-![Screen shot: PWD & Editor](Screenshot1.png)
-![Screen shot: Sketch & Editor](Screenshot2.png)
+![Screen shot: PWD & Editor](screenshots/01.png)
+![Screen shot: Sketch & Editor](screenshots/02.png)
 
