@@ -44,6 +44,7 @@ or
   - `docker run -dit --name httpd -p 4444:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:alpine`
   - Open port [4444] and browser to where your export is and donwload the file.
   - The web server runs on the background. You may re-enter the canvas-sketch environment with `docker-compose run --rm -p 8888:9966 node sh`
+  - It works fine for PNGs but you may get a session time out if you try to download MP4s... : /
 
 ### Screen shots:
 ![Screen shot: PWD & Editor](screenshots/01.png)
