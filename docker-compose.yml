@@ -9,10 +9,3 @@ services:
     volumes:
       - ./app:/home/node/app
       
-  web:
-    image: httpd:alpine
-    volumes:
-      - ./app:/usr/local/apache2/htdocs/
-    ports:
-      - "4444:80"
-
