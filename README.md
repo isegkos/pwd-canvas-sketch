@@ -10,15 +10,18 @@ Select [+ADD NEW INSTANCE] and run the following commands on the command prompt 
 3. `docker-compose build`
 4. `docker-compose run --rm -p 8888:9966 node sh`
 
-Command [4] will take a minute, so please wait (do not mind the warnings). After command [5], you will get an environment where you can run canva-sketch commands, like:
+Command [4] will take a minute, so please wait (do not mind the warnings). After command [4], you will get a linux environment where you can run canvas-sketch commands:
 - to create a new sketch:
   - `canvas-sketch sketch.js --new` 
 - to open an existing sketch:
   - `canvas-sketch sketch.js` 
 
-You can use the 'canvas-sketch-util' and 'tweakpane' library. You can use the --output and --stream option in the commands (ffmpeg is installed in the environment). Whenever you want to stop working on a sketch and start/open another sketch, press CTRL+C and give the next canvas-sketch command. 
+You can use the `canvas-sketch-util` and `tweakpane` library. You can use the `--output` and `--stream` option in the commands (ffmpeg is installed in the environment). Whenever you want to stop working on a sketch and start/open another sketch, press CTRL+C and give the next canvas-sketch command. You can try out the existing sketches:
+- `canvas-sketch A4-gradient.js` 
+- `canvas-sketch grid-noise-tweakpane.js` 
 
-You can leave the canvas-sketch environment with the command:
+You can leave the canvas-sketch environment:
+- CTRL+C if you are running a `canvas-sketch` command to get the command prompt back
 - `exit`
 
 If you want to start the canvas-sketch environment again in the same PWD instance/session, run the following command again:
@@ -35,7 +38,7 @@ or
 - click on the [8888] link if it becomes visible
 
 ### Notes:
-- You cannot use the --out option which opens the sketch in the browser automatically, you have to open the sketch on your own, on [8888] port.
+- You cannot use the `--out` option which opens the sketch in the browser automatically, you have to open the sketch on your own, on [8888] port.
 - When you create a new sketch with `canvas-sketch sketch.js --new` and then add a library, like 'canvas-sketch-util/random', an error will appear saying the module cannot be found. That is because when the sketch was created, the library was not included in the node modules. Simply press CTRL+C and reopen as an existing sketch with 'canvas-sketch sketch.js' (without the --new option) and the library will be included. Reload or reopen the page with the sketch.
 - You cannot directly download files from PWD Lab (f.e., png and mp4 exports). As a workaround you can start a a web server on the background. Outside the canvas-sketch environment, give the following command to start a web server on port [4444]: 
   - `docker run -dit --name httpd -p 4444:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:alpine`
