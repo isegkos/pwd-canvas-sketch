@@ -34,8 +34,9 @@ or
 ### Notes:
 - You cannot use the --out option which opens the sketch in the browser automatically, you have to open the sketch on your own, on [8888] port.
 - When you create a new sketch with 'canvas-sketch sketch.js --new' and then add a library, like 'canvas-sketch-util/random', an error will appear saying the module cannot be found. That is because when the sketch was created, the library was not included in the node modules. Simply press CTRL+C and reopen as an existing sketch with 'canvas-sketch sketch.js' (without the --new option) and the library will be included. Reload or reopen the page with the sketch.
-- You cannot directly download files from PWD Lab, but you can start a a web server on the background. Outside the canvas-sketch environment, give the following command to start a web server on port [4444]: 
-  - docker run -dit --name httpd -p 4444:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+- You cannot directly download files from PWD Lab (f.e., png and mp4 exports), but you can start a a web server on the background. Outside the canvas-sketch environment, give the following command to start a web server on port [4444]: 
+  - docker run -dit --name httpd -p 4444:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:alpine
+  - Open port [4444] and browser to where your export is and donwload the file.
   - The web server runs on the background. You may re-enter the canvas-sketch environment with 'docker-compose run --rm -p 8888:9966 node sh'
 
 ### Screen shots:
