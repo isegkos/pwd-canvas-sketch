@@ -4,11 +4,11 @@ This is a simple docker solution to experiment with canvas-sketch online in PWD 
 First, go to PWD Lab select [Login] > (docker) and [Start] to start a new session:
 - https://labs.play-with-docker.com/
 
-Select [+ADD NEW INSTANCE] and run the following commands on the command prompt (you can copy and then paste in the command line with the mouse middle button):
-1. git clone https://github.com/isegkos/pwd-canvas-sketch.git
-2. cd pwd-canvas-sketch
-3. docker-compose build
-4. docker-compose run --rm -p 8888:9966 node sh
+Select [+ADD NEW INSTANCE] and run the following commands on the command prompt (you can copy and then **paste in the command line with the mouse middle button**):
+1. `git clone https://github.com/isegkos/pwd-canvas-sketch.git`
+2. `cd pwd-canvas-sketch`
+3. `docker-compose build`
+4. `docker-compose run --rm -p 8888:9966 node sh`
 
 Command [4] will take a minute, so please wait (do not mind the warnings). After command [5], you will get an environment where you can run canva-sketch commands, like:
 - to create a new sketch:
