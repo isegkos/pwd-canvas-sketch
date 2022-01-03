@@ -18,7 +18,7 @@ Command [4] will take a minute, so please wait (do not mind the warnings). After
 
 You can use the `canvas-sketch-util` and `tweakpane` library. You can use the `--output` and `--stream` option in the commands (ffmpeg is installed in the environment). Whenever you want to stop working on a sketch and start/open another sketch, press CTRL+C and give the next canvas-sketch command. You can try out the existing sketches:
 - `canvas-sketch A4-gradient.js` 
-- `canvas-sketch grid-noise-tweakpane.js` 
+- `canvas-sketch grid-noise-tweakpane.js --output=exports --stream` 
 
 You can leave the canvas-sketch environment:
 - CTRL+C if you are running a `canvas-sketch` command to get the command prompt back
