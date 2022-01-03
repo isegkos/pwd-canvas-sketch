@@ -16,9 +16,12 @@ Command [4] will take a minute, so please wait (do not mind the warnings). After
 - to open an existing sketch:
   - canvas-sketch sketch.js 
 
-You can use the canvas-sketch-util library and the --output option in the commands. The ffmpeg is also installed in the environment. Whenever you want to stop working on a sketch and start/open another sketch, press CTRL+C and give the next canvas-sketch command. 
+You can use the 'canvas-sketch-util' and 'tweakpane' library. You can use the --output and --stream option in the commands (ffmpeg is installed in the environment). Whenever you want to stop working on a sketch and start/open another sketch, press CTRL+C and give the next canvas-sketch command. 
 
-If you type exit and press ENTER you will leave the environment. If you want to start the environment again in the same PWD instance/session, run the following command again:
+You can leave the canvas-sketch environment with the command:
+- exit
+
+If you want to start the canvas-sketch environment again in the same PWD instance/session, run the following command again:
 - docker-compose run --rm -p 8888:9966 node sh
 
 Your sketches are located in the pwd-canvas-sketch/app directory. To edit your sketches in the online editor:
@@ -34,7 +37,7 @@ or
 ### Notes:
 - You cannot use the --out option which opens the sketch in the browser automatically, you have to open the sketch on your own, on [8888] port.
 - When you create a new sketch with 'canvas-sketch sketch.js --new' and then add a library, like 'canvas-sketch-util/random', an error will appear saying the module cannot be found. That is because when the sketch was created, the library was not included in the node modules. Simply press CTRL+C and reopen as an existing sketch with 'canvas-sketch sketch.js' (without the --new option) and the library will be included. Reload or reopen the page with the sketch.
-- You cannot directly download files from PWD Lab (f.e., png and mp4 exports), but you can start a a web server on the background. Outside the canvas-sketch environment, give the following command to start a web server on port [4444]: 
+- You cannot directly download files from PWD Lab (f.e., png and mp4 exports). As a workaround you can start a a web server on the background. Outside the canvas-sketch environment, give the following command to start a web server on port [4444]: 
   - docker run -dit --name httpd -p 4444:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:alpine
   - Open port [4444] and browser to where your export is and donwload the file.
   - The web server runs on the background. You may re-enter the canvas-sketch environment with 'docker-compose run --rm -p 8888:9966 node sh'
