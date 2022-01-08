@@ -1,10 +1,11 @@
 FROM node:alpine
 
 WORKDIR /home/node/app
-RUN npm install canvas-sketch-cli -g
-RUN npm install canvas-sketch-util --save
+RUN npm install canvas-sketch-cli --global
 RUN npm install @ffmpeg-installer/ffmpeg --global
-RUN npm install --save tweakpane
+RUN npm install canvas-sketch-util --save
+RUN npm install tweakpane --save 
 RUN npm install load-asset --save
+RUN npm install jimp --save 
 
-# EXPOSE 9966   # Reminder that canvas-sketch default port is 99
+EXPOSE 9966 
