@@ -11,14 +11,3 @@ services:
     ports:
       - "8888:9966"
     command: ["node", "/usr/local/bin/canvas-sketch", "sketch.js"]
-
-  node-debug:
-    build: ./
-    user: "root"
-    working_dir: /home/node/app
-    environment:
-      NODE_ENV: development
-    ports:
-      - 3000:3000
-      - 9229:9229
-    command: ["node", "--inspect=0.0.0.0:9229", "/usr/local/bin/canvas-sketch", "-p 3000", "sketch.js"]
