@@ -1,5 +1,6 @@
 const canvasSketch = require('canvas-sketch');
 const random = require('canvas-sketch-util/random');
+const math = require('canvas-sketch-util/math');
 const load = require('load-asset');
 const Tweakpane = require('tweakpane');
 
@@ -24,8 +25,8 @@ const PARAMS = {
   background: '#111',
   text: 'ゴッドハンド',
   direction: 'Organic',
-	freq: 0.01,
-	frameFactor: true,
+	// freq: 0.01,
+	// frameFactor: true,
   showOriginal: false,
   fps:2
 }
@@ -94,8 +95,9 @@ const sketch = async ({context, update}) => {
 			const x = col * cell.w;
 			const y = row * cell.h;
 
-      const frameFactor = PARAMS.frameFactor ? 100 : 0;
-      const n = random.noise3D(x, y, frame * frameFactor, PARAMS.freq);
+      // const frameFactor = PARAMS.frameFactor ? 100 : 0;
+      // const n = random.noise3D(x, y, frame * frameFactor, PARAMS.freq);
+      const n = random.noise3D(x, y, frame * 10, PARAMS.freq);
 
       context.save();
       context.translate(x,y);
@@ -103,7 +105,8 @@ const sketch = async ({context, update}) => {
       context.beginPath();
       context.rect(0, 0, cell.w, cell.h);
       context.fillStyle = color;
-			context.fillText(random.pick(chars), 0, 0);
+      const index = Math.floor(math.mapRange(n, -1, 1, 0, chars.length-1));
+      context.fillText(chars[index], 0, 0);
       context.restore();
     }
 
