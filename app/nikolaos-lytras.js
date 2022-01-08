@@ -143,20 +143,19 @@ const createPane = () => {
   folder.addInput(PARAMS, 'showOriginal').on('change', (ev) => {
       manager.render();
   });
-
-
-	folder = pane.addFolder({ title: 'Cell '});
-	folder.addInput(PARAMS, 'cellWidth', { min: 2, max: 40, step: 2 });
-	folder.addInput(PARAMS, 'cellHeight', { min: 2, max: 40, step: 2 });
+  
+  folder = pane.addFolder({ title: 'Cell '});
+  folder.addInput(PARAMS, 'cellWidth', { min: 2, max: 40, step: 2 });
+  folder.addInput(PARAMS, 'cellHeight', { min: 2, max: 40, step: 2 });
   folder.on('change', (ev) => {
     if (ev.last) {
       updateCell();
     }
   });
-
-	folder = pane.addFolder({ title: 'Font Size / Background' });
-	folder.addInput(PARAMS, 'scaleFont', { min: 1, max: 10, step: 0.5 });
-	folder.addInput(PARAMS, 'background');
+  
+  folder = pane.addFolder({ title: 'Font Size / Background' });
+  folder.addInput(PARAMS, 'scaleFont', { min: 1, max: 10, step: 0.5 });
+  folder.addInput(PARAMS, 'background');
   folder.on('change', (ev) => {
     if (ev.last) {
       manager.render();
@@ -164,8 +163,8 @@ const createPane = () => {
   });
   folder = pane.addFolder({ title: 'Text' });
   folder.addInput(PARAMS, 'text');
-
-	folder = pane.addFolder({ title: 'Animate'});
+  
+  folder = pane.addFolder({ title: 'Animate'});
   button = folder.addButton({title: 'Pause'});
   button.on('click', () => {
     manager.pause();
