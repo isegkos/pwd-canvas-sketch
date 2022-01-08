@@ -10,6 +10,3 @@ RUN npm install load-asset --save
 RUN npm install jimp --save 
 
 EXPOSE 9966 
-# RUN chown -R node /home/node/app
-# USER node
-# CMD ["canvas-sketch", "-p 3000", "sketch.js"]
