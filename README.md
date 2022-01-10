@@ -45,7 +45,7 @@ or
   - Open port [4444], then browse to where your export is and donwload the file.
   - The web server runs on the background. You may re-enter the canvas-sketch environment with `docker-compose run --rm -p 8888:9966 node sh`
   - It works fine for PNGs but you may get a session time out if you try to download MP4s... : /
-- If you have docker and docker-compose installed and you want to use the docker files locally in your computer, replace the "root" user in docker-compose.yml with "node".
+- If you have docker and docker-compose installed in your computer and you want to use the docker files locally, replace the "root" user in docker-compose.yml with "node".
 
 ### Screen shots:
 ![Screen shot: PWD & Editor](screenshots/01.png)
