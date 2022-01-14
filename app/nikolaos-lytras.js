@@ -77,10 +77,10 @@ const sketch = async ({context, update}) => {
       return;
     }
     context.fillStyle = PARAMS.background;
-		context.fillRect(0, 0, width, height);
+    context.fillRect(0, 0, width, height);
     context.font = `italic bold ${(cell.w > cell.h? cell.w : cell.h) * PARAMS.scaleFont}px arial`;
-		context.textBaseline = 'middle';
-		context.textAlign = 'center';
+    context.textBaseline = 'middle';
+    context.textAlign = 'center';
     const chars = PARAMS.text.split('');
 
     for (let i = 0; i < cell.count; i++) {
